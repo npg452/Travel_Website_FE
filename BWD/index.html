@@ -1,0 +1,775 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="../OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--poppins-font-family  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <!-- using  Font awesome-->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    
+    <title>Travel with FourFun</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">FOURFUN</a>
+        <div class="group">
+            <ul class="navigation">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#boich">Bổ ích</a></li>
+                <li><a href="#places">Địa điểm</a></li>
+                <li><a href="#gallery">Hình ảnh</a></li>
+                <li><a href="#testimonial">Khách hàng</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+            <ul class="navigation-mobile" id="list-menu-mobile">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#boich">Bổ ích</a></li>
+                <li><a href="#places">Địa điểm</a></li>
+                <li><a href="#gallery">Hình ảnh</a></li>
+                <li><a href="#testimonial">Khách hàng</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+            <div class="search">
+                <span class="icon">
+                    <ion-icon name="search-outline" class="searchBtn" id="btn-search"></ion-icon>
+                    <ion-icon name="close-outline" class="closeBtn" id="btn-close"></ion-icon>
+                </span>
+            </div>
+            <ion-icon name="menu-outline" class="menuToggle" id="toggle"></ion-icon>
+        </div>
+        <div class="searchBox">
+            <input type="text" placeholder="Search here...">
+        </div>
+    </header>
+<!-- ================================================================================================================-->
+    <section class="slider owl-carousel owl-theme">
+        <div class="slider-item slider-item-one">
+            <div class="wraper">
+                <!-- <h2>Hà Nội</h2>
+                <p>Hà Nội cuối tuần đẹp trời,
+                    Du lịch tại gia hay la cà phố xá</p> -->
+            </div>
+        </div>
+        <div class="slider-item slider-item-two">
+            <div class="wraper">
+                <!-- <h2>Sài Gòn</h2>
+                <p>Đi đâu không quan trọng, quan trọng là bạn đi với ai</p> -->
+            </div>
+        </div>
+        <div class="slider-item slider-item-three">
+            <div class="wraper">
+                <!-- <p>Đà Nẵng</p>
+                <p>Tôi thích cảm giác được là kẻ vô danh trong một thành phố xa lạ.</p> -->
+            </div>
+        </div>
+        <div class="slider-item slider-item-four">
+            <div class="wraper">
+            </div>
+        </div>
+        <div class="slider-item slider-item-five">
+            <div class="wraper">
+            </div>
+        </div>
+    </section>
+    
+    <nav id="boich" class="intro">
+        <div class="intro-content">
+            <div class="intro-cnt-one">
+                <b>CẨM NANG DU LỊCH</b>
+                <p>Tất cả những thông tin hữu ích bạn cần tham khảo để lên kế hoạch chuẩn bị tốt nhất cho chuyến du lịch của mình</p>
+            </div>
+            <div class="intro-cnt-two">
+                <div class="cnt1">
+                    <img src="../image/travel_1.png" alt=""> <br>
+                    
+                    <b>Mùa du lịch</b>
+                    
+                    <p>Chọn thời điểm di du lịch thích hợp nhất để có một chuyến đi tốt đẹp</p>
+                </div>
+                <div class="cnt2">
+                    <img src="../image/sunrise.png" alt=""> <br>
+                    <b>Thăm quan</b>
+                    <p>Các điểm nên đến, danh lam thắng cảnh của thành phố bạn muốn tới thăm quan</p>
+                </div>
+                <div class="cnt3">
+                    <img src="../image/game.png" alt=""> <br>
+                    <b>Giải trí</b>
+                    <p>Tham gia vô vàn các hoạt động giải trí, thử thách trong các khu vui chơi</p>
+                </div>
+                <div class="cnt4">
+                    <img src="../image/food.png" alt=""> <br>
+                    <b>Ẩm thực</b>
+                    <p>Thưởng thức đặc sản của từng vùng miền, từng thành phố</p>
+                </div>
+                <div class="cnt5">
+                    <img src="../image/house.png" alt=""> <br>
+                    <b>Nghĩ dưỡng</b>
+                    <p>Tìm được chỗ nghĩ dưỡng thoải mái, phù hợp với không gian, giá tiền</p>
+                </div>
+                <div class="cnt6">
+                    <img src="../image/dv.png" alt=""> <br>
+                    <b>Dịch vụ</b>
+                    <p>Chọn được loại hình dịch vụ phù hợp như khách sạn, phương tiện di chuyển...</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+       
+   <!-- ========================================================================== -->
+        <!-- <div class="gioi-thieu">
+            <p>GIỚI THIỆU</p>
+        </div> -->
+      <div id="about" class="row" style="display: grid;">
+        <div class="imgWrapper">
+            <img src="../image/bana_1.png" alt="">
+        </div>
+        <div class="contentWrapper">
+            <div class="content">
+                
+                <h2>CHÀO MỪNG CÁC BẠN ĐẾN VỚI FOURFUN</h2>
+                <p>Đây là một trang web tuyệt vời để giúp bạn tìm kiếm thông tin về các địa điểm du lịch, khu vui chơi giải trí, các địa điểm ăn uống cũng như nghỉ dưỡng.
+                    Chúng tôi cung cấp cho bạn những thông tin hữu ích và đầy đủ nhất về các điểm đến du lịch ở Việt Nam. Từ những địa điểm nổi tiếng
+                    đến những điểm đến mới lạ, chúng tôi sẽ giúp bạn có một trải nghiệm du lịch tuyệt vời nhất.
+                    Mang lại cảm xúc thăng hoa và để lại những giá trị đặc biệt cho du khách sau mỗi chuyến đi</p>
+                <a href="#" style="   border-radius: 50px; background: orange;">Khám phá</a>
+            </div>
+        </div>
+    </div>
+    <!-- ================================================= -->
+    <h2>Địa điểm nổi bật</h2>
+    <section id="places" class="swiper mySwiper">
+       
+        <div class="swiper-wrapper">
+
+            <div class="card swiper-slide">
+                <div class="card-image">
+                    <img src="../image/pic1.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Sài Gòn</span>
+                    <span class="card_name">Thành phố không ngủ</span>
+                    <p class="card-text">Là hình ảnh một thành phố trẻ trung luôn sống trong nhịp điệu tất bật, sôi động. Đặc biệt, khi màn đêm buông xuống, thành phố lại ẩn chứa một vẻ đẹp quyến rũ lạ kì.</p>
+                    <button class="card-btn"><a href="../Location/saigon/index2.html">Xem thêm</a></button>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card-image">
+                    <img src="../image/hanoi2.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Hà Nội</span>
+                    <span class="card_name">Thủ đô ngàn năm văn hiến</span>
+                    <p class="card-text">Hà Nội là một điểm đến tuyệt vời cho những người yêu văn hóa, ẩm thực và lịch sử. Thành phố có nhiều di tích lịch sử, kiến trúc cổ đại và các địa danh nổi tiếng cùng với các món ăn đặc trưng
+                         như phở, bún chả, nem rán, bánh cuốn và nhiều món ăn khác. </p>
+                    <button class="card-btn"><a href="../Location/Ha_Noi/index2.html">Xem thêm</a></button>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card-image">
+                    <img src="../image/danang.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Đà Nẵng</span>
+                    <span class="card_name">Thành phố biển</span>
+                    <p class="card-text">Đà Nẵng là thành phố năng động và hiện đại, có những bãi biển đẹp, các địa danh nổi tiếng và ẩm thực đặc trưng. Đây là một điểm đến tuyệt vời cho những người muốn thưởng ngoạn vẻ đẹp thiên nhiên, khám phá văn hóa địa phương và tận hưởng những trải nghiệm giải trí đầy thú vị.</p>
+                    <button class="card-btn"><a href="../Location/Da_Nang/index2.html">Xem thêm</a></button>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card-image">
+                    <img src="../image/hue.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Huế</span>
+                    <span class="card_name">Thành phố mộng mơ</span>
+                    <p class="card-text">Huế là một thành phố lịch sử và văn hóa tuyệt vời tại miền Trung Việt Nam, nơi du khách có thể khám phá các di sản văn hóa, thưởng thức ẩm thực đặc trưng và tận hưởng vẻ đẹp của bờ biển và đồi núi xanh mướt.</p>
+                    <button class="card-btn"><a href="../Location/Hue/index.html">Xem thêm</a></button>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card-image">
+                    <img src="../image/quangtri.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Quảng Trị</span>
+                    <span class="card_name">Vùng đất lửa</span>
+                    <p class="card-text">Quảng Trị là một tỉnh ở miền Trung Việt Nam, nổi tiếng với các địa danh lịch sử và ẩm thực đặc trưng của vùng miền. Du khách có thể khám phá các di tích lịch sử, thưởng thức các món ăn ngon và tham gia các hoạt động trải nghiệm.</p>
+                    <button class="card-btn"><a href="../Location/Quang_Tri/">Xem thêm</a></button>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card-image">
+                    <img src="../image/hoian.jpg">
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Quảng Nam</span>
+                    <span class="card_name">Đất Di sản - Văn hiến</span>
+                    <p class="card-text">Quảng Nam là một tỉnh đẹp nằm ở Trung bộ Việt Nam, nổi tiếng với các di sản văn hóa, lịch sử và thiên nhiên đặc biệt. Tỉnh này có thành phố cổ Hội An, các bãi biển đẹp và đặc sản ẩm thực hấp dẫn. Quảng Nam là một điểm đến lý tưởng cho du khách muốn khám phá văn hóa Việt Nam và tận hưởng kì nghỉ thư giãn trên bãi biển hoặc trong khu rừng rậm rạp.</p>
+                    <button class="card-btn"><a href="../Location/Quang_Nam/index.html">Xem thêm</a></button>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card-image">
+                    <img src="../image/quangbinh.webp">
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Quảng Bình</span>
+                    <span class="card_name">Vương quốc hang động</span>
+                    <p class="card-text">Quảng Bình là một tỉnh ở miền Trung Việt Nam, có nhiều điểm đến đẹp như Hang Sơn Đoòng, khu du lịch sinh thái Phong Nha - Kẻ Bàng và các bãi biển. Nơi đây còn có các di sản lịch sử và văn hóa, ẩm thực đặc trưng và các hoạt động trải nghiệm như lặn biển, leo núi và tham quan hang động.</p>
+                    <button class="card-btn"><a href="../Location/Quang_Binh/index.html">Xem thêm</a></button>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card-image">
+                    <img src="../image/ninhbinh.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Ninh Bình</span>
+                    <span class="card_name">Tuyệt tình cốc</span>
+                    <p class="card-text">Ninh Bình là một điểm đến tuyệt vời ở miền Bắc Việt Nam, với vẻ đẹp của các danh lam thắng cảnh, ẩm thực đặc trưng và các hoạt động trải nghiệm như đi thuyền, leo núi và tham quan các khu vườn quốc gia.</p>
+                    <button class="card-btn"><a href="../Location/Ninh_Binh/index.html">Xem thêm</a></button>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card-image">
+                    <img src="../image/nhatrang.jpg" alt="">
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Nha Trang</span>
+                    <span class="card_name">Hòn ngọc Viễn Đông</span>
+                    <p class="card-text">Nha Trang là thành phố biển nổi tiếng ở miền Trung Việt Nam, với các bãi biển đẹp, hoạt động giải trí và ẩm thực đặc trưng. Du khách có thể tham gia các hoạt động như lặn biển, đi chơi thủy cung và thưởng ngoạn các điểm tham quan đáng chú ý.</p>
+                    <button class="card-btn"><a href="../Location/Nha_Trang/index2.html">Xem thêm</a></button>
+                </div>
+            </div>
+
+            <div class="card swiper-slide">
+                <div class="card-image">
+                    <img src="../image/lamdong.png" alt="">
+                </div>
+                <div class="card-content">
+                    <span class="card-title">Lâm Đồng</span>
+                    <span class="card_name">Đảo ngọc</span>
+                    <p class="card-text">Lâm Đồng là một tỉnh nằm ở miền Trung Việt Nam, nổi tiếng với khí hậu mát mẻ, vẻ đẹp hoang sơ của núi rừng và các vườn hoa đẹp. Đà Lạt là điểm đến nổi tiếng ở Lâm Đồng, với các điểm tham quan như hồ Xuân Hương, thác Pongour và đồi chè Cầu Đất.</p>
+                    <button class="card-btn"><a href="../Location/Lam_Dong/index2.html">Xem thêm</a></button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+<!-- ===========================GALLERY========================================== -->
+<section id="gallery" class="work section-padding">
+    <div class="container-fluid">
+        <div class="gallery-row">
+            <div class="col-sm-12">
+                <div class="section-title text-center">
+                    <h2>Hình Ảnh</h2>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-row">
+            <!-- START SINGLE WORK DESIGN AREA -->
+            <div class="col-md-4 col-sm-6">
+                <div class="project-item">
+                    <a href="../image/phuquoc1.webp" class="work-popup">
+                        <img src="../image/phuquoc1.webp" class="img-responsive" alt="">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h2 class="wow fadeInUp">
+                                    Hòn Dăm Ngoài - Phú Quốc
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- END SINGLE WORK DESIGN AREA -->
+            <!-- START SINGLE WORK DESIGN AREA -->
+            <div class="col-md-4 col-sm-6">
+                <div class="project-item">
+                    <a href="../image/danang1.webp" class="work-popup">
+                        <img src="../image/danang1.webp" class="img-responsive" alt="">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h2 class="wow fadeInUp">
+                                    Sun World Bà Nà Hills - Đà Nẵng
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- END SINGLE WORK DESIGN AREA -->
+            <!-- START SINGLE WORK DESIGN AREA -->
+            <div class="col-md-4 col-sm-6">
+                <div class="project-item">
+                    <a href="../image/ninhbinh1.webp" class="work-popup">
+                        <img src="../image/ninhbinh1.webp" class="img-responsive" alt="">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h2 class="wow fadeInUp">
+                                    Chùa Bái Đính - Ninh Bình
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- END SINGLE WORK DESIGN AREA -->
+            <!-- START SINGLE WORK DESIGN AREA -->
+            <div class="col-md-4 col-sm-6">
+                <div class="project-item">
+                    <a href="../image/hagiang1.jpg" class="work-popup">
+                        <img src="../image/hagiang1.jpg" class="img-responsive" alt="" >
+                        <div class="project-overlay">   
+                            <div class="project-info">
+                                <h2 class="wow fadeInUp">
+                                    Đồng Văn - Hà Giang
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- END SINGLE WORK DESIGN AREA -->
+            <!-- START SINGLE WORK DESIGN AREA -->
+            <div class="col-md-4 col-sm-6">
+                <div class="project-item">
+                    <a href="../image/hanoi_1.png">
+                        <img src="../image/hanoi_1.png" class="img-responsive" alt="">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h2 class="wow fadeInUp">
+                                    Hồ Gươm - Hà Nội
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- END SINGLE WORK DESIGN AREA -->
+            <!-- START SINGLE WORK DESIGN AREA -->
+            <div class="col-md-4 col-sm-6">
+                <div class="project-item">
+                    <a href="../image/kthanhhue.png" class="work-popup">
+                        <img src="../image/kthanhhue.png" class="img-responsive" alt="">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h2 class="wow fadeInUp">
+                                    Đại nội Huế
+                                </h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- END SINGLE WORK DESIGN AREA -->
+        </div>
+    </div>
+</section>
+
+<!-- ==================================================================== -->
+    <section id="testimonial">
+        <div class="testimonial-heading">
+            <!-- <span>Bình luận</span> -->
+            <h1>Feedback</h1>
+        </div>
+
+        <!-- testimonials-box-container -->
+        <div class="testimonial-box-container">
+            <!-- box 1 -->
+            <div class="testimonial-box">
+                <!-- top -->
+                <div class="box-top">
+                    <!-- profile -->
+                    <div class="profile">
+                        <!-- img -->
+                        <div class="profile-img">
+                            <img src="../image/pr1.jpg">
+                        </div>
+                        <div class="name-user">
+                            <strong>Thanh Phuong</strong>
+                            <span>@gfhdjsxvf</span>
+                        </div>
+                    </div>
+                    <!-- review -->
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <!-- cmt -->
+                <div class="client-cmt">
+                    <p>Đà Lạt thật sự là một điểm đến tuyệt vời để tận hưởng không khí mát mẻ và thư giãn. Tôi rất thích thăm quan các vườn hoa và thưởng thức cà phê đặc trưng của địa phương.</p>
+                </div>
+            </div>
+             <!-- box 2 -->
+            <div class="testimonial-box">
+                <!-- top -->
+                <div class="box-top">
+                    <!-- profile -->
+                    <div class="profile">
+                        <!-- img -->
+                        <div class="profile-img">
+                            <img src="../image/pr2.jpg">
+                        </div>
+                        <div class="name-user">
+                            <strong>Van Duc</strong>
+                            <span>@rdsfdey</span>
+                        </div>
+                    </div>
+                    <!-- review -->
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+                <!-- cmt -->
+                <div class="client-cmt">
+                    <p>Tôi rất thích chuyến đi du lịch đến Sapa, nơi có vẻ đẹp hoang sơ và hấp dẫn của núi rừng, thác nước và các bản làng địa phương của người dân tộc thiểu số. Điều này đã tạo cho tôi một trải nghiệm du lịch độc đáo và khó quên</p>
+                </div>
+            </div>
+             <!-- box 3 -->
+            <div class="testimonial-box">
+                <!-- top -->
+                <div class="box-top">
+                    <!-- profile -->
+                    <div class="profile">
+                        <!-- img -->
+                        <div class="profile-img">
+                            <img src="../image/pr3.jpg">
+                        </div>
+                        <div class="name-user">
+                            <strong>Trinh Dien</strong>
+                            <span>@gfsdtrasd</span>
+                        </div>
+                    </div>
+                    <!-- review -->
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <!-- cmt -->
+                <div class="client-cmt">
+                    <p>Tôi đã có chuyến đi đến Nha Trang và thật sự thích bãi biển đẹp và các hoạt động giải trí thú vị ở đây. Ẩm thực cũng rất đa dạng và ngon miệng. Tôi sẽ quay lại đây trong tương lai</p>
+                </div>
+            </div>
+             <!-- box 4 -->
+            <div class="testimonial-box">
+                <!-- top -->
+                <div class="box-top">
+                    <!-- profile -->
+                    <div class="profile">
+                        <!-- img -->
+                        <div class="profile-img">
+                            <img src="../image/pr4.jpg">
+                        </div>
+                        <div class="name-user">
+                            <strong>Trung Nam</strong>
+                            <span>@ytrdfghs</span>
+                        </div>
+                    </div>
+                    <!-- review -->
+                    <div class="reviews">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <!-- cmt -->
+                <div class="client-cmt">
+                    <p>Thành phố Hội An ở Quảng Nam thật sự là một điểm đến đáng ghé thăm. Tôi đã tham quan các di sản văn hóa và thưởng ngoạn vẻ đẹp của thành phố cổ này. Ẩm thực ở đây cũng rất đa dạng và ngon miệng</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================================= -->
+    <!-- <section id="contact" class="contact-area section-padding" data-stellar-background-ratio="0.6">
+        <div class="container-2">
+            <div class="row-2">
+                <div class="col-sm-12" style="height: 50px;">
+                    <div class="section-title-2">
+                        <h2>questions?</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row-2" style="padding-left: 244px;">
+                <div class="col-sm-4">
+                    <div class="single-contact wow fadeInUp" data-wow-delay=".2s">
+                        <div class="contact-icon">
+                            <i class="fa fa-map"></i>
+                        </div>
+                        <h2>our office:</h2>
+                        <p>Jurain,Dhaka Bangladesh</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="single-contact wow fadeInUp" data-wow-delay=".4s">
+                        <div class="contact-icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <h2>contact number:</h2>
+                        <p>+1234321321</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="single-contact wow fadeInUp" data-wow-delay=".6s">
+                        <div class="contact-icon">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <h2>Email us:</h2>
+                        <p>websitename@mail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row-2 contact-form-design-area" style="margin-left: 222px;">
+                <div class="col-md-12">
+                    START CONTACT FORM DESIGN AREA 
+                    <div class="contact-form">
+                        <form id="contact-form" method="post" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="form-group col-md-4">
+                                    <input type="text" name="name" class="form-control" id="first-name" placeholder="Name" required="required">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email" required="required">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <input type="text" name="subject" class="form-control" id="subject" placeholder="subject">
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <textarea rows="6" name="message" class="form-control" id="description" placeholder="Your Message" required="required"></textarea>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <div class="actions wow fadeInUp" data-wow-delay=".4s">
+                                        <input type="submit" value="send message" name="submit" id="submitButton" class="" title="Submit Your Message!">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    < / END CONTACT FORM DESIGN AREA 
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- ===================================== -->
+    <section id="contact" class="footer">
+        <div class="social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-snapchat"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="#">Trang chủ</a></li>
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#boich">Bổ ích</a></li>
+                <li><a href="#places">Địa điểm</a></li>
+                <li><a href="#gallery">Hình ảnh</a></li>
+                <li><a href="#testimonial">Khách hàng</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+        <p class="copyright">
+            Ban quyen thuoc ve @FourFunTeam 2023
+        </p>
+    </section>
+    <!-- ================================================================================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        $(() => {
+            $('#toggle').click(() => {
+                $('#list-menu-mobile').addClass('list-menu-mobile');
+                $('#list-menu-mobile').slideToggle('slow')
+                $('#list-menu-mobile').css('display', 'flex');
+            })
+            $('#btn-search').click(() => {
+                $('#list-menu-mobile').css({
+                    display: 'none'
+                });
+                $('.searchBox').addClass('active');
+                if($(window).width() <= 800){
+                    $('#toggle').css('display' , 'none');
+                }
+                $('#btn-close').addClass('active');
+            })
+            $('#btn-close').click(() => {
+                $('.searchBox').removeClass('active');
+                if($(window).width() <=800){
+                    $('#toggle').show();
+                }
+                $('#btn-close').removeClass('active');
+            })
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+        })
+       
+       
+    </script>
+
+    <script>
+        var swiper = new Swiper(".slide-content", {
+            slidesPerView: 4,
+            spaceBetween: 25,
+            loop: true,
+            centerSlide: 'true',
+            fade: 'true',
+            grabCursor: 'true',
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+              dynamicBullets: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+        
+            breakpoints:{
+                0: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView:3,
+                },
+                950: {
+                    slidesPerView: 4,
+                },
+            },
+          });
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Code injected by live-server -->
+    <script>
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+	// ]]>
+
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true,
+
+            effect: "coverflow",
+            grabCursor:true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate:0,
+                stretch:0,
+                depth:300,
+                modifier:1,
+                slideShadows: false,
+            }, 
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+    <!-- <script src="./script.js"></script> -->
+</body>
+
+</html>
